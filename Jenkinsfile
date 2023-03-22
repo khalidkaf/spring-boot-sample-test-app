@@ -14,7 +14,7 @@ pipeline {
         stage('test intégration') {
           steps {
             echo 'debut test integration'
-            bat 'mvnw -Dtest=com.exemple.testingweb.integration.** test'
+            bat 'mvnw -Dtest=com.example.testingweb.integration.** test'
             echo 'fin test integration'
           }
         }
