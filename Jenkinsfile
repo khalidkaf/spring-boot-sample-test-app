@@ -29,7 +29,9 @@ pipeline {
 
         stage('smoke test') {
           steps {
-            echo 'smoke test'
+            echo 'debut smoke test'
+            bat 'mvnw -Dtest=com.exemple.testingweb.smoke.** test'
+            echo 'fin smoke test'
           }
         }
 
