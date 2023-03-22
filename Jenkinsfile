@@ -30,7 +30,7 @@ pipeline {
         stage('smoke test') {
           steps {
             echo 'debut smoke test'
-            bat 'mvnw -Dtest=com.exemple.testingweb.smoke.** test'
+            bat 'mvnw -Dtest=com.example.testingweb.smoke.** test'
             echo 'fin smoke test'
           }
         }
