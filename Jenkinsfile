@@ -22,7 +22,7 @@ pipeline {
         stage('test fonctionnel') {
           steps {
             echo 'debut test fonctionnel'
-            bat 'mvnw -Dtest=com.exemple.testingweb.functional.** test'
+            bat 'mvnw -Dtest=com.example.testingweb.functional.** test'
             echo 'fin test fonctionnel'
           }
         }
