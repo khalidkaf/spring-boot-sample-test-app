@@ -42,9 +42,9 @@ pipeline {
 
     stage('deploy') {
       steps {
+        input(message: 'Voulez-vous continuer ?', ok: 'Allons-y')
         echo 'stage deploy'
         bat 'javaw -jar ./target/testing-web-complete.jar'
-        input(message: 'Voulez-vous continuer ?', ok: 'Allons-y')
       }
     }
 
