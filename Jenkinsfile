@@ -6,6 +6,7 @@ pipeline {
         echo 'debut de l\'etape build'
         bat 'mvnw -DskipTests clean install'
         echo 'fin de build'
+        archiveArtifacts '**/target/*.jar'
       }
     }
 
